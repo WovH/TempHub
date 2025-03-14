@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>❤️给特别的人❤️</title>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            font-family: "楷体", cursive;
+            text-align: center;
+        }
+        
+        .container {
+            margin: 100px auto;
+            max-width: 600px;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #ff1493;
+            font-size: 40px;
+            text-shadow: 2px 2px #ffffff;
+        }
+        
+        .heart {
+            color: #ff69b4;
+            font-size: 60px;
+            animation: heartbeat 1.2s infinite;
+        }
+        
+        .message {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255,105,180,0.3);
+            margin: 30px;
+        }
+        
+        img {
+            width: 200px;
+            border-radius: 50%;
+            margin: 20px;
+            border: 5px solid #ff69b4;
+        }
+        
+        button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        button:hover {
+            transform: scale(1.1);
+            background-color: #ff1493;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>致我心中的唯一</h1>
+        
+        <div class="message">
+            <p>亲爱的[女生名字]：Xy丶</p>
+            <p>每当看到你的笑容，我的世界都明亮了</p>
+            <p>你的眼睛像星星一样闪耀</p>
+            <p>你的声音是我最爱的旋律</p>
+            <p>这份心意已经藏在心里很久...</p>
+        </div>
+
+        <img src="https://wovh.github.io/TempHub/Test.jpg" alt="特别的人"> <!-- 替换成你的图片地址 -->
+        
+        <br>
+        <button onclick="showConfession()">点击查看我的心意</button>
+    </div>
+
+    <script>
+        function showConfession() {
+            if(confirm("你愿意给我一个照顾你的机会吗？")) {
+                alert("🎉 这是我人生最棒的时刻！我会用行动证明你的选择是对的！");
+            } else {
+                alert("💔 我会继续努力，直到能打动你的心");
+            }
+            
+            // 追加浪漫效果
+            document.body.style.background = "linear-gradient(45deg, #ff99cc, #ff66b3)";
+            document.querySelector(".heart").style.fontSize = "80px";
+        }
+    </script>
+</body>
+</html>
